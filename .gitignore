@@ -2,3 +2,6 @@ elpa
 tramp
 eshell
 network-security.data
+.last-package-update-day
+auto-save-list
+session.*
