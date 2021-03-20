@@ -1,7 +1,8 @@
 elpa
-tramp
-eshell
-network-security.data
-.last-package-update-day
-auto-save-list
+org-roam.db
+projectile-bookmarks.eld
+projectile.cache
 session.*
+backup
+auto-save-list
+.org-id-locations
