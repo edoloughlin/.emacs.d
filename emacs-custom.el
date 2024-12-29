@@ -12,10 +12,10 @@
  '(org-modules
    '(ol-bbdb ol-bibtex ol-docview ol-eww ol-gnus org-habit ol-info ol-irc ol-mhe ol-rmail ol-w3m))
  '(org-roam-directory "/home/ed/Documents/org")
- '(org-roam-mode t nil (org-roam))
+ '(org-roam-mode t)
  '(org-special-ctrl-a/e t)
  '(package-selected-packages
-   '(button-lock tide fixmee flycheck dumb-jump cider clojure-mode-extra-font-locking clojure-mode paredit org-roam rjsx-mode expand-region company multiple-cursors adaptive-wrap magit yasnippet-snippets yasnippet feature-mode git-gutter ace-window smart-mode-line org-journal rainbow-delimiters auto-complete editorconfig avy howdoi counsel-projectile autopair counsel ivy flx which-key try use-package)))
+   '(mermaid-ts-mode mermaid-mode button-lock tide fixmee flycheck dumb-jump cider clojure-mode-extra-font-locking clojure-mode paredit org-roam rjsx-mode expand-region company multiple-cursors adaptive-wrap magit yasnippet-snippets yasnippet feature-mode git-gutter ace-window smart-mode-line org-journal rainbow-delimiters auto-complete editorconfig avy howdoi counsel-projectile autopair counsel ivy flx which-key try use-package)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

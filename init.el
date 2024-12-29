@@ -7,6 +7,14 @@
 (package-initialize)
 (package-refresh-contents)
 
+;; Probably the least ugly means of getting the node path from nvm.
+;; exec-path-from-shell is also an option but it recommends changing them
+;; .zshrc or .bachrc PATH setting so the path is explicitly set and doesn't include $PATH, which is silly
+(let ((nvm-dir (expand-file-name "~/.nvm")))
+  (when (file-exists-p (concat nvm-dir "/nvm.sh"))
+    (shell-command (concat "source " nvm-dir "/nvm.sh && nvm use --silent 16 && echo $PATH") "*nvm-path*") ; Adjust the Node version here
+    (setenv "PATH" (concat (string-trim (with-current-buffer "*nvm-path*" (buffer-string))) ":" (getenv "PATH")))))
+
 ;; bootstrap use-package
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
@@ -130,6 +138,9 @@
 
 (use-package yasnippet-snippets
   :after yasnippet
+  :ensure t)
+
+(use-package mermaid-ts-mode
   :ensure t)
 
 (use-package projectile

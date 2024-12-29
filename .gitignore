@@ -6,3 +6,6 @@ session.*
 backup
 auto-save-list
 .org-id-locations
+\#*
+.\#*
+eln-cache
